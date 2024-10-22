@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Optional background color for contrast */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2vw; /* Responsive gap between the circles */
+    width: 90vw;
+    height: 90vh;
+}
+
+.circle {
+    aspect-ratio: 1 / 1; /* Ensures a perfect circle shape */
+    width: 100%; /* Responsive width based on the grid cell */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: bold;
+    border: 2px solid black;
+    box-sizing: border-box; /* Include border size in the element's width/height */
+    line-height: normal;
+}
