@@ -45,7 +45,7 @@ body {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    /* Use vmin for gap to scale with the smaller dimensions */
+    /* Use vmin for gap to scale with the smaller dimension */
     gap: 1.5vmin;
     /* Constrain size using vw/vh but also vmin to handle aspect ratios */
     /* Let the container take up significant space but leave margins */
